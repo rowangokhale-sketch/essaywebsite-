@@ -1,3 +1,4 @@
+html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,247 +13,310 @@
 
 <style>
 
-:root {
-    --cream: #faf7f2;
-    --navy: #1f355e;
-    --coral: #e07a5f;
-    --text: #434343;
-    --white: #ffffff;
-    --border: #e7e0d8;
+:root{
+    --cream:#faf7f2;
+    --navy:#1f355e;
+    --coral:#df7c63;
+    --text:#454545;
+    --white:#ffffff;
+    --border:#e8e0d6;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-html {
-    scroll-behavior: smooth;
+html{
+    scroll-behavior:smooth;
 }
 
-body {
-    background: var(--cream);
-    color: var(--text);
-    font-family: 'Inter', sans-serif;
-    line-height: 1.8;
-    font-size: 18px;
+body{
+    background:var(--cream);
+    color:var(--text);
+    font-family:'Inter',sans-serif;
+    line-height:1.8;
+    font-size:18px;
 }
 
-.container {
-    width: 90%;
-    max-width: 1000px;
-    margin: 0 auto;
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:0 auto;
 }
 
-header {
-    position: sticky;
-    top: 0;
-    background: rgba(250,247,242,.95);
-    backdrop-filter: blur(8px);
-    border-bottom: 1px solid var(--border);
-    z-index: 100;
+header{
+    position:sticky;
+    top:0;
+    background:rgba(250,247,242,.95);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--border);
+    z-index:999;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 22px 0;
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:24px 0;
 }
 
-.logo {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 2rem;
-    font-weight: 600;
-    color: var(--navy);
+.logo{
+    font-family:'Cormorant Garamond',serif;
+    font-size:2rem;
+    color:var(--navy);
+    font-weight:700;
 }
 
-nav ul {
-    display: flex;
-    list-style: none;
-    gap: 2rem;
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:2rem;
 }
 
-nav a {
-    text-decoration: none;
-    color: var(--navy);
-    font-weight: 500;
+nav a{
+    text-decoration:none;
+    color:var(--navy);
+    font-weight:500;
 }
 
-nav a:hover {
-    color: var(--coral);
+nav a:hover{
+    color:var(--coral);
 }
 
-section {
-    padding: 100px 0;
+.hero{
+    padding:140px 0 120px;
 }
 
-.hero {
-    padding: 140px 0 120px;
+.eyebrow{
+    text-transform:uppercase;
+    letter-spacing:.12em;
+    color:var(--coral);
+    font-size:.85rem;
+    font-weight:600;
+    margin-bottom:1rem;
 }
 
-.tagline {
-    color: var(--coral);
-    font-weight: 600;
-    letter-spacing: .05em;
-    text-transform: uppercase;
-    margin-bottom: 1rem;
-    font-size: .9rem;
+.hero h1{
+    font-family:'Cormorant Garamond',serif;
+    color:var(--navy);
+    font-size:5rem;
+    line-height:.95;
+    max-width:850px;
+    margin-bottom:1.5rem;
 }
 
-h1 {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 4.5rem;
-    line-height: 1;
-    color: var(--navy);
-    margin-bottom: 2rem;
-    max-width: 800px;
+.subhead{
+    font-family:'Cormorant Garamond',serif;
+    font-size:2rem;
+    color:var(--coral);
+    margin-bottom:2rem;
 }
 
-h2 {
-    font-family: 'Cormorant Garamond', serif;
-    color: var(--navy);
-    font-size: 3rem;
-    margin-bottom: 2rem;
+.hero p{
+    max-width:750px;
+    margin-bottom:1.5rem;
 }
 
-h3 {
-    font-family: 'Cormorant Garamond', serif;
-    color: var(--navy);
-    font-size: 2rem;
-    margin-bottom: 1rem;
+.button{
+    display:inline-block;
+    background:var(--coral);
+    color:white;
+    text-decoration:none;
+    padding:16px 30px;
+    border-radius:999px;
+    margin-top:1rem;
+    font-weight:600;
 }
 
-p {
-    margin-bottom: 1.5rem;
+.button:hover{
+    opacity:.9;
 }
 
-.hero p {
-    max-width: 760px;
-    font-size: 1.15rem;
+section{
+    padding:110px 0;
 }
 
-.lead {
-    font-size: 1.3rem;
-    color: var(--navy);
-    font-weight: 500;
+.section-title{
+    font-family:'Cormorant Garamond',serif;
+    color:var(--navy);
+    font-size:3.25rem;
+    margin-bottom:2rem;
 }
 
-.quote {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 2rem;
-    color: var(--coral);
-    margin-top: 2rem;
+.quote-section{
+    text-align:center;
+    padding:140px 0;
 }
 
-.button {
-    display: inline-block;
-    margin-top: 1rem;
-    background: var(--coral);
-    color: white;
-    text-decoration: none;
-    padding: 14px 28px;
-    border-radius: 999px;
-    font-weight: 600;
-    transition: .2s ease;
+.quote{
+    font-family:'Cormorant Garamond',serif;
+    color:var(--navy);
+    font-size:4rem;
+    line-height:1.15;
+    max-width:800px;
+    margin:0 auto;
 }
 
-.button:hover {
-    transform: translateY(-2px);
+.white{
+    background:white;
 }
 
-.alt-section {
-    background: white;
+.narrow{
+    max-width:800px;
 }
 
-.card {
-    background: white;
-    border: 1px solid var(--border);
-    border-radius: 20px;
-    padding: 2.5rem;
-    margin-top: 2rem;
+.two-column{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:5rem;
 }
 
-.package-grid {
-    display: grid;
-    gap: 2rem;
-    margin-top: 3rem;
+.process{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:2rem;
+    margin-top:3rem;
 }
 
-.price {
-    color: var(--coral);
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
+.process-card{
+    background:white;
+    border:1px solid var(--border);
+    border-radius:20px;
+    padding:2rem;
 }
 
-ul {
-    padding-left: 1.5rem;
-    margin-bottom: 1.5rem;
+.process-card h3{
+    font-family:'Cormorant Garamond',serif;
+    color:var(--navy);
+    font-size:2rem;
+    margin-bottom:1rem;
 }
 
-li {
-    margin-bottom: .5rem;
+.benefits{
+    margin-top:2rem;
 }
 
-.callout {
-    border-left: 4px solid var(--coral);
-    padding-left: 1.5rem;
-    margin: 2rem 0;
+.benefits li{
+    margin-bottom:1rem;
+    list-style:none;
 }
 
-.contact-box {
-    background: white;
-    border-radius: 20px;
-    padding: 3rem;
-    border: 1px solid var(--border);
-    margin-top: 2rem;
+.benefits li:before{
+    content:"✓ ";
+    color:var(--coral);
+    font-weight:bold;
 }
 
-.contact-box a {
-    color: var(--navy);
-    text-decoration: none;
+.package-grid{
+    display:grid;
+    gap:2rem;
+    margin-top:3rem;
 }
 
-footer {
-    padding: 4rem 0;
-    text-align: center;
-    border-top: 1px solid var(--border);
+.package{
+    background:white;
+    border:1px solid var(--border);
+    border-radius:24px;
+    padding:2.5rem;
 }
 
-footer p {
-    margin: .5rem 0;
+.package h3{
+    font-family:'Cormorant Garamond',serif;
+    color:var(--navy);
+    font-size:2rem;
 }
 
-.footer-tagline {
-    color: var(--coral);
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.6rem;
+.price{
+    color:var(--coral);
+    font-size:2rem;
+    font-weight:700;
+    margin:.5rem 0 1.5rem;
 }
 
-@media (max-width: 768px) {
+.package ul{
+    margin-top:1rem;
+    padding-left:1.25rem;
+}
 
-    nav {
-        flex-direction: column;
-        gap: 1rem;
+.package li{
+    margin-bottom:.75rem;
+}
+
+.statement{
+    text-align:center;
+    max-width:850px;
+    margin:0 auto;
+    font-size:1.25rem;
+}
+
+.statement strong{
+    color:var(--navy);
+}
+
+.contact{
+    text-align:center;
+}
+
+.contact-box{
+    background:white;
+    border:1px solid var(--border);
+    border-radius:24px;
+    padding:3rem;
+    max-width:700px;
+    margin:3rem auto 0;
+}
+
+.contact-box a{
+    color:var(--navy);
+    text-decoration:none;
+}
+
+footer{
+    border-top:1px solid var(--border);
+    text-align:center;
+    padding:4rem 0;
+}
+
+.footer-tagline{
+    color:var(--coral);
+    font-family:'Cormorant Garamond',serif;
+    font-size:1.8rem;
+    margin-top:.5rem;
+}
+
+@media (max-width:768px){
+
+    nav{
+        flex-direction:column;
+        gap:1rem;
     }
 
-    nav ul {
-        flex-wrap: wrap;
-        justify-content: center;
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
     }
 
-    h1 {
-        font-size: 3rem;
+    .hero h1{
+        font-size:3.5rem;
     }
 
-    h2 {
-        font-size: 2.4rem;
+    .quote{
+        font-size:2.5rem;
     }
 
-    section {
-        padding: 80px 0;
+    .process{
+        grid-template-columns:1fr;
+    }
+
+    .two-column{
+        grid-template-columns:1fr;
+        gap:2rem;
+    }
+
+    .section-title{
+        font-size:2.5rem;
     }
 }
 
@@ -262,240 +326,301 @@ footer p {
 <body>
 
 <header>
-    <div class="container">
-        <nav>
-            <div class="logo">Essay It Out Loud</div>
+<div class="container">
+<nav>
+<div class="logo">Essay It Out Loud</div>
 
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</div>
 </header>
 
-<section id="home" class="hero">
-    <div class="container">
+<section class="hero">
+<div class="container">
 
-        <div class="tagline">Helping Students Find Their Voice</div>
+<div class="eyebrow">Helping Students Find Their Voice</div>
 
-        <h1>Every Student Has a Story Worth Telling</h1>
+<h1>Every Student Has a Story Worth Telling.</h1>
 
-        <p class="lead">
-            Every young person has a story worth telling. Sometimes they just need help finding it.
-        </p>
+<div class="subhead">The challenge is figuring out which one.</div>
 
-        <p>
-            The college essay isn't about sounding impressive or getting every word perfect. It's about sounding like yourself and telling your story with confidence, clarity, and heart.
-        </p>
+<p>
+Every young person has a story worth telling. Sometimes they just need help finding it.
+</p>
 
-        <p>
-            At Essay It Out Loud, I help high school students uncover what makes them unique and craft compelling college essays that stand out for all the right reasons.
-        </p>
+<p>
+The college essay isn't about sounding impressive. It's about sounding like yourself and telling your story with confidence, clarity, and heart.
+</p>
 
-        <p>
-            The strongest college essays don't sound like everyone else. They sound like the student who wrote them.
-        </p>
+<p>
+At Essay It Out Loud, I help students uncover meaningful experiences, shape them into compelling narratives, and write essays that feel honest, thoughtful, and distinctly their own.
+</p>
 
-        <a href="#contact" class="button">Schedule a Consultation</a>
+<a href="#contact" class="button">Schedule a Consultation</a>
 
-    </div>
+</div>
+</section>
+
+<section class="quote-section white">
+<div class="container">
+<div class="quote">
+“What admissions officers remember are stories.”
+</div>
+</div>
+</section>
+
+<section id="about">
+<div class="container narrow">
+
+<h2 class="section-title">A Different Kind of Essay Coach</h2>
+
+<p>
+I've spent nearly 30 years helping brands discover what makes them different and communicate it clearly.
+</p>
+
+<p>
+Now I help students do the same.
+</p>
+
+<p>
+Every applicant has grades, activities, and accomplishments. What sets them apart is perspective.
+</p>
+
+<p>
+The best essays aren't simply about what happened. They're about what a student learned, noticed, questioned, or came to understand.
+</p>
+
+<p>
+My role is to help uncover those insights and bring them to life on the page.
+</p>
+
+</div>
+</section>
+
+<section class="white">
+<div class="container narrow">
+
+<h2 class="section-title">Every Student Already Has Something Worth Saying</h2>
+
+<p>
+My job is to help uncover it, shape it, and bring it to life.
+</p>
+
+<p>
+Not by writing the essay for them.
+</p>
+
+<p>
+By helping them write it themselves.
+</p>
+
+<p>
+The final essay should never sound like me.
+</p>
+
+<p>
+It should sound like them.
+</p>
+
+</div>
 </section>
 
 <section>
-    <div class="container">
+<div class="container">
 
-        <h2>My Approach</h2>
+<h2 class="section-title">How It Works</h2>
 
-        <p>
-            My mission is simple: to help students discover their voice, tell their story, and submit an essay they can be proud of.
-        </p>
+<div class="process">
 
-        <div class="callout">
-            <p>
-                Not an essay written for them. An essay written by them — with expert guidance every step of the way.
-            </p>
-        </div>
+<div class="process-card">
+<h3>Discover</h3>
+<p>We explore experiences, interests, challenges, and defining moments to uncover the strongest story.</p>
+</div>
 
-        <h2>Why Me?</h2>
+<div class="process-card">
+<h3>Draft</h3>
+<p>We transform ideas into a compelling narrative with structure, clarity, and voice.</p>
+</div>
 
-        <p>
-            I'm an advertising copywriter with nearly 30 years of experience at some of the industry's leading agencies, including Ogilvy and Young & Rubicam.
-        </p>
+<div class="process-card">
+<h3>Refine</h3>
+<p>We strengthen the essay through thoughtful revision while preserving what matters most: authenticity.</p>
+</div>
 
-        <p>
-            From television and radio campaigns to digital content and brand storytelling, I've built my career on helping national and global brands discover what makes them different and communicate it clearly.
-        </p>
+</div>
 
-        <p>
-            The same skills that help companies tell their stories help students tell theirs.
-        </p>
-
-        <p>
-            I also understand firsthand the pressure students and families can feel. I've guided my own children through the essay-writing process, helping them navigate one of the most personal — and often stressful — parts of the journey.
-        </p>
-
-        <p>
-            My role is part sounding board and part editor. Together, we'll uncover the experiences and insights that make your student who they are and shape them into an essay they're proud to submit.
-        </p>
-
-    </div>
+</div>
 </section>
 
-<section id="about" class="alt-section">
-    <div class="container">
+<section class="white">
+<div class="container narrow">
 
-        <h2>Why “Essay It Out Loud”?</h2>
+<h2 class="section-title">Why “Essay It Out Loud”?</h2>
 
-        <p>
-            The name Essay It Out Loud comes from one of the simplest and most effective writing techniques I know: read your words out loud.
-        </p>
+<p>
+The name comes from one of the simplest and most effective writing techniques I know: read your words out loud.
+</p>
 
-        <p>
-            When you hear your words, you hear the rhythm. You hear where your writing flows and where it doesn't. You hear when you're being yourself and when you're trying too hard.
-        </p>
+<p>
+When you hear your writing, you hear the rhythm. You hear where it flows. You hear where it doesn't.
+</p>
 
-        <p class="quote">
-            That's what this process is all about. Finding your voice.
-        </p>
+<p>
+Most importantly, you hear your voice.
+</p>
 
-        <h2>Why Work with Essay It Out Loud?</h2>
+<p>
+And that's what this process is really about.
+</p>
 
-        <p>
-            Every college applicant is competing with strong grades, impressive activities, and long lists of accomplishments.
-        </p>
+<p><strong>Finding it.</strong></p>
 
-        <p>
-            What admissions officers remember are stories. The best college essays aren't simply about what happened, but what the student learned, noticed, questioned, or came to understand.
-        </p>
-
-        <p>
-            The challenge is that many students don't realize they already have one. That's where I come in.
-        </p>
-
-        <p>
-            Together, we'll identify the experiences and moments that reveal something meaningful about who they are and shape those ideas into an essay that feels natural, engaging, and distinctly theirs.
-        </p>
-
-        <p>
-            The result is an essay that's unmistakably theirs.
-        </p>
-
-        <p class="quote">
-            Not a perfect essay.<br>
-            An honest one.
-        </p>
-
-    </div>
+</div>
 </section>
 
-<section id="services">
-    <div class="container">
+<section>
+<div class="container narrow">
 
-        <h2>Services & Packages</h2>
+<h2 class="section-title">More Than an Essay</h2>
 
-        <p>
-            Writing a strong college essay takes more than good grammar. It takes reflection, honest storytelling, and a process that helps students discover what they want to say.
-        </p>
+<p>
+Students leave with more than a polished Common App essay.
+</p>
 
-        <h3>Who I Work With</h3>
+<ul class="benefits">
+<li>A compelling essay topic</li>
+<li>Greater confidence in their voice</li>
+<li>A stronger understanding of their own story</li>
+<li>Writing skills they'll use in college and beyond</li>
+<li>An essay they're genuinely proud to submit</li>
+</ul>
 
-        <p>
-            I work with high school juniors and seniors at all stages of the process—from students staring at a blank page to those with a completed draft who want expert feedback before submitting.
-        </p>
-
-        <div class="package-grid">
-
-            <div class="card">
-                <h3>Complete Essay Coaching Package</h3>
-                <div class="price">$495</div>
-
-                <p>A guided three-session process designed to take students from a blank page to a polished Common App essay.</p>
-
-                <ul>
-                    <li><strong>Session 1:</strong> Concepting</li>
-                    <li><strong>Session 2:</strong> Drafting</li>
-                    <li><strong>Session 3:</strong> Refining</li>
-                </ul>
-
-                <p><strong>Includes:</strong></p>
-
-                <ul>
-                    <li>Three one-hour coaching sessions</li>
-                    <li>Notes and action items after each session</li>
-                    <li>Review and feedback between meetings</li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <h3>Essay Tune-Up Package</h3>
-                <div class="price">$325</div>
-
-                <p>Already have a draft? This package is designed for students who want expert feedback before submission.</p>
-
-                <ul>
-                    <li><strong>Session 1:</strong> Review & Strategy</li>
-                    <li><strong>Session 2:</strong> Revision & Polish</li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <h3>Individual Coaching Sessions</h3>
-                <div class="price">$150/hour</div>
-
-                <ul>
-                    <li>Supplemental essays</li>
-                    <li>Brainstorming</li>
-                    <li>Editing</li>
-                    <li>Additional coaching support</li>
-                </ul>
-            </div>
-
-        </div>
-
-        <div class="callout">
-            Every essay is written by the student. My role is to guide the process, challenge ideas, provide feedback, and help bring each student's voice to the page.
-        </div>
-
-    </div>
+</div>
 </section>
 
-<section id="faq" class="alt-section">
-    <div class="container">
-        <h2>FAQ</h2>
-        <p>Coming Soon.</p>
-    </div>
+<section id="services" class="white">
+<div class="container">
+
+<h2 class="section-title">Services</h2>
+
+<div class="package-grid">
+
+<div class="package">
+<h3>Complete Essay Journey</h3>
+<div class="price">$495</div>
+
+<p>
+A guided three-session process that takes students from a blank page to a polished Common App essay.
+</p>
+
+<ul>
+<li><strong>Discover:</strong> Story development and brainstorming</li>
+<li><strong>Draft:</strong> Structure, storytelling, and voice</li>
+<li><strong>Refine:</strong> Editing, revision, and final polish</li>
+</ul>
+
+<p><strong>Includes:</strong></p>
+
+<ul>
+<li>Three one-hour coaching sessions</li>
+<li>Notes and action items</li>
+<li>Review and feedback between meetings</li>
+</ul>
+</div>
+
+<div class="package">
+<h3>Draft Review & Refinement</h3>
+<div class="price">$325</div>
+
+<p>
+For students who already have a draft and want expert feedback before submitting.
+</p>
+
+<ul>
+<li>Two one-hour coaching sessions</li>
+<li>Detailed essay review</li>
+<li>Revision strategy and guidance</li>
+</ul>
+</div>
+
+<div class="package">
+<h3>Individual Coaching</h3>
+<div class="price">$150/hour</div>
+
+<ul>
+<li>Supplemental essays</li>
+<li>Brainstorming</li>
+<li>Editing</li>
+<li>Additional coaching support</li>
+</ul>
+</div>
+
+</div>
+
+</div>
 </section>
 
-<section id="contact">
-    <div class="container">
+<section>
+<div class="container">
 
-        <h2>Contact</h2>
+<div class="statement">
+<p>
+Every essay is written by the student.
+</p>
 
-        <div class="contact-box">
+<p>
+My role is to guide the process, challenge ideas, provide feedback, and help bring each student's voice to the page.
+</p>
 
-            <p class="lead">Ready to get started?</p>
+<p>
+<strong>Because the strongest essays don't sound like everyone else.</strong>
+</p>
 
-            <p>
-                I'd love to help your student find the story only they can tell.
-            </p>
+<p>
+They sound like the student who wrote them.
+</p>
+</div>
 
-            <p><strong>Call:</strong> 201.446.9820</p>
-            <p><strong>Email:</strong> <a href="mailto:myrowe@gmail.com">myrowe@gmail.com</a></p>
+</div>
+</section>
 
-        </div>
+<section id="contact" class="white contact">
+<div class="container">
 
-    </div>
+<h2 class="section-title">Let's Find Your Story.</h2>
+
+<div class="contact-box">
+
+<p>
+Whether you're staring at a blank page or polishing a final draft, I'd love to help.
+</p>
+
+<p><strong>Call:</strong> 201.446.9820</p>
+
+<p>
+<strong>Email:</strong>
+<a href="mailto:myrowe@gmail.com">myrowe@gmail.com</a>
+</p>
+
+<a href="mailto:myrowe@gmail.com" class="button">
+Schedule a Consultation
+</a>
+
+</div>
+
+</div>
 </section>
 
 <footer>
-    <p><strong>Essay It Out Loud</strong></p>
-    <p>Helping Students Find Their Voice</p>
-    <p class="footer-tagline">Not a perfect essay. An honest one.</p>
+<p><strong>Essay It Out Loud</strong></p>
+<p>Helping Students Find Their Voice</p>
+<div class="footer-tagline">Not a perfect essay. An honest one.</div>
 </footer>
 
 </body>
 </html>
+```
